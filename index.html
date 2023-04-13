@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Зоопарк</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Животные мира</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Добро пожаловать в зоопарк!</h1>
+    <h1 class="header-title">Добро пожаловать в мир животных</h1>
     <nav>
-      <ul>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#animals">Животные</a></li>
-        <li><a href="#contact">Контакты</a></li>
+      <ul class="nav-list">
+        <li><a href="#">Домой</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <section id="about">
-    <h2>О нас</h2>
-    <p>Зоопарк - это место, где вы можете увидеть множество удивительных животных со всего мира. Мы предлагаем различные программы и мероприятия для посетителей всех возрастов.</p>
-  </section>
-  <section id="animals">
-    <h2>Животные</h2>
-    <ul>
-      <li>
-        <img src="lion.jpg" alt="Лев">
-        <h3>Лев</h3>
-        <p>Лев - король зверей. Он является одним из наиболее впечатляющих и красивых хищников. У нас в зоопарке есть несколько львов, которых можно увидеть в их естественной среде обитания.</p>
-      </li>
-      <li>
-        <img src="elephant.jpg" alt="Слон">
-        <h3>Слон</h3>
-        <p>Слон - крупнейший сухопутный млекопитающий на Земле. Он известен своим огромным размером, длинными бивнями и социальной организацией. В зоопарке у нас есть несколько слонов, среди которых есть и детеныши.</p>
-      </li>
-      <li>
-        <img src="penguin.jpg" alt="Пингвин">
-        <h3>Пингвин</h3>
-        <p>Пингвины - уникальные птицы, не умеющие летать, но отлично плавающие и ныряющие. Они обитают в Антарктике и других холодных регионах. В зоопарке у нас есть специальный бассейн для пингвинов, где посетители могут наблюдать за их поведением.</p>
-      </li>
-    </ul>
-  </section>
-  <section id="contact">
-    <h2>Контакты</h2>
-    <p>Свяжитесь с нами, чтобы узнать больше о нашем зоопарке, его программах и мероприятиях. Вы можете найти нас по адресу: <br>
-    Зоопарк, ул. Животинская, 12345, Город, Страна. <br>
-    Телефон: +1 123 456 7890 <br>
-    Email: info@zooexample.com <br>
-    Следите за нами в социальных сетях: <a href="https://www.instagram.com/zooexample" target="_blank">Instagram</a>, <a href="https://www.facebook.com/zooexample" target="_blank">Facebook</a>, <a href="https://twitter.com/zooexample" target="_blank">Twitter</a>.
-  </p>
+  <main>
+    <section class="intro-section">
+      <h2 class="intro-title">Добро пожаловать в мир животных</h2>
+      <p class="intro-text">Узнайте удивительные факты о разнообразных видов животных, исследуйте их мир, и насладитесь фотографиями из нашей галереи.</p>
+      <a href="#" class="intro-button">Узнать больше</a>
+    </section>
+    <section class="animal-section">
+      <h2 class="animal-title">Популярные виды животных</h2>
+      <div class="animal-container">
+        <div class="animal-card">
+          <img src="lion.jpg" alt="Лев" class="animal-image">
+          <h3 class="animal-card-title">Лев</h3>
+          <p class="animal-card-text">Лев - король зверей, символ силы и могущества.</p>
+        </div>
+        <div class="animal-card">
+          <img src="elephant.jpg" alt="Слон" class="animal-image">
+          <h3 class="animal-card-title">Слон</h3>
+          <p class="animal-card-text">Слон - крупнейшее наземное млекопитающее, символ мудрости и долголетия.</p>
+        </div>
+        <div class="animal-card">
+          <img src="toucan.jpg" alt="Тукан" class="animal-image">
+          <h3 class="animal-card-title">Тукан</h3>
+          <p class="animal-card-text">Тукан - яркая птица с длинным красочным клювом, известная своим необычным внешним видом.</p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <h2 class="gallery-title">Галерея</h2>
+      <div class="gallery-container">
+        <img src="gallery1.jpg" alt="Галерея 1" class="gallery-image">
+        <img src="gallery2.jpg" alt="Галерея 2" class="gallery-image">
+        <img src="gallery3.jpg" alt="Галерея 3" class="gallery-image">
+        <img src="gallery4.jpg" alt="Галерея 4" class="gallery-image">
+        <img src="gallery5.jpg" alt="Галерея 5" class="gallery-image">
+        <img src="gallery6.jpg" alt="Галерея 6" class="gallery-image">
+      </div>
+    </section>
+    <section class="contact-section">
+<h2 class="contact-title">Контакты</h2>
+<p class="contact-text">Свяжитесь с нами, чтобы получить дополнительную информацию о животных или поделиться своими вопросами и комментариями.</p>
+<form class="contact-form">
+<input type="text" class="contact-form-input" placeholder="Имя">
+<input type="email" class="contact-form-input" placeholder="Email">
+<textarea class="contact-form-input contact-form-textarea" placeholder="Сообщение"></textarea>
+<input type="submit" value="Отправить" class="contact-form-button">
+</form>
 </section>
-<footer>
-  <p>&copy; 2023 Зоопарк. Все права защищены. | Сайт разработан на CSS.</p>
-</footer>
+
+  </main>
+  <footer>
+    <p class="footer-text">Все права защищены &copy; 2023. Сайт о животных.</p>
+  </footer>
 </body>
 </html>
