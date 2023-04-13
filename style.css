@@ -1,8 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: "Arial", sans-serif; /* Замените на желаемый шрифт */
 }
+
+h3 {
+    font-family: "Georgia", serif; /* Замените на желаемый шрифт */
+}
+
+p {
+    font-family: "Verdana", sans-serif; /* Замените на желаемый шрифт */
+}
+
 
 .container {
     max-width: 1200px;
