@@ -1,67 +1,67 @@
-/* ����� ��� ����� � �������� */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #6699cc;
-  padding: 20px;
-  color: #fff;
-}
-
-h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 20px;
-}
-
-section h2 {
+/* Стили для заголовков */
+.header-title,
+.intro-title,
+.animal-title,
+.gallery-title,
+.contact-title,
+.footer-text {
+  color: #228B22; /* Зеленый цвет */
   font-size: 24px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-section ul li {
-  display: flex;
+/* Стили для текста */
+.intro-text,
+.animal-card-text,
+.contact-text {
+  color: #333; /* Черный цвет */
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
-section img {
-  width: 150px;
-  margin-right: 20px;
+/* Стили для ссылок */
+.nav-list a,
+.intro-button,
+.contact-form-button {
+  color: #228B22; /* Зеленый цвет */
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #228B22;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
 
-footer {
-  background-color: #6699cc;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
+.nav-list a:hover,
+.intro-button:hover,
+.contact-form-button:hover {
+  background-color: #228B22; /* Зеленый цвет */
+  color: #fff; /* Белый цвет */
 }
+
+/* Стили для галереи */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+/* Стили для формы контактов */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  padding: 10px;
+  border: 1px solid #228B22; /* Зеленый цвет */
+  border-radius: 3px
