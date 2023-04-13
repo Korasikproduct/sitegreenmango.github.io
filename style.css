@@ -1,0 +1,158 @@
+/* Стили для заголовков */
+.header-title,
+.intro-title,
+.animal-title,
+.gallery-title,
+.contact-title,
+.footer-text {
+  color: #228B22; /* Зеленый цвет */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Стили для текста */
+.intro-text,
+.animal-card-text,
+.contact-text {
+  color: #333; /* Черный цвет */
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Стили для ссылок */
+.nav-list a,
+.intro-button,
+.contact-form-button {
+  color: #228B22; /* Зеленый цвет */
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #228B22;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover,
+.intro-button:hover,
+.contact-form-button:hover {
+  background-color: #228B22; /* Зеленый цвет */
+  color: #fff; /* Белый цвет */
+}
+
+/* Стили для галереи */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+/* Стили для формы контактов */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  padding: 10px;
+  border: 1px solid #228B22; /* Зеленый цвет */
+  border-radius: 3px;
+resize: none;
+font-size: 16px;
+}
+
+.contact-form-button {
+background-color: #228B22; /* Зеленый цвет /
+color: #fff; / Белый цвет */
+padding: 10px 15px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contact-form-button:hover {
+background-color: #2E8B57; /* Более темный оттенок зеленого цвета */
+}
+
+/* Стили для футера /
+.footer-text {
+color: #333; / Черный цвет /
+font-size: 14px;
+padding: 10px;
+text-align: center;
+background-color: #228B22; / Зеленый цвет /
+color: #fff; / Белый цвет */
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media screen and (max-width: 768px) {
+.header {
+padding: 30px;
+}
+
+.nav-list {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 30px;
+}
+
+.nav-list a {
+padding: 10px;
+}
+
+.intro {
+padding: 30px;
+}
+
+.intro-title,
+.intro-text,
+.intro-button {
+text-align: center;
+}
+
+.animal-cards {
+padding: 30px;
+gap: 30px;
+}
+
+.animal-card {
+width: 100%;
+margin-bottom: 30px;
+}
+
+.gallery {
+padding: 30px;
+}
+
+.gallery-container {
+justify-content: flex-start;
+}
+
+.gallery-image {
+width: 100%;
+height: auto;
+margin: 5px;
+}
+
+.contact-section {
+padding: 30px;
+}
+
+.contact-form {
+grid-template-columns: 1fr;
+}
+
+.footer-text {
+padding: 10px;
+}
+}
